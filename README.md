@@ -3,6 +3,8 @@
 ずらっと並んだハチワレの中から、1 匹だけ**耳の色がちがう子**を探す色覚ゲーム。
 [Hideyasu/anmika](https://github.com/Hideyasu/anmika)（白って200色あんねん）をベースにしています。
 
+**https://hachiware-iroate.pages.dev**
+
 非公式のファンゲームです。
 
 ## 遊び方
@@ -27,5 +29,5 @@
 npm install
 npm run dev      # 開発サーバー
 npm test         # 色空間とゲームロジックのテスト
-npm run deploy   # build して Cloudflare Workers にデプロイ
+npm run deploy   # build して Cloudflare Pages（hachiware-iroate）にデプロイ
 ```
