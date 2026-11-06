@@ -1,0 +1,63 @@
+/*
+ * 耳の色を正しく見せたいので、UI の色は彩度を抑えたクリーム系に寄せる。
+ * 盤面のすぐそばに鮮やかな色を置くと補色残像で判定が狂う。
+ */
+:root {
+	--bg: #fbf8f1;
+	--panel: #ffffff;
+	--panel-2: #efebe2;
+	--line: #e3ddd0;
+	--text: #2b2722;
+	--muted: #8a8378;
+	--accent: #5d8fb8;
+	--danger: #d0605a;
+	--radius: 18px;
+
+	color-scheme: light;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family:
+		'Hiragino Maru Gothic ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP',
+		'Yu Gothic', Meiryo, system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+.mono {
+	font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+	font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
