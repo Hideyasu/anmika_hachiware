@@ -1,3 +1,3 @@
 // 完全な静的サイトとして書き出す（Cloudflare 側は静的アセット配信だけで済む）
 export const prerender = true;
-export const ssr = true;
+export const ssr = true; // ビルド時に HTML を書き出すために必要
