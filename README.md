@@ -5,6 +5,12 @@
 
 **https://hachiware-iroate.pages.dev**
 
+> [!WARNING]
+> **このリポジトリはもうデプロイしないでください。**
+> 2026-11-07 から hachiware-iroate.pages.dev では v2（対戦・ランキング・得意な色/苦手な色つき）が動いています。
+> 開発とデプロイは [Hideyasu/anmika_hachiware_v2](https://github.com/Hideyasu/anmika_hachiware_v2) で行います（`npm run deploy`）。
+> ここで `npm run deploy` を実行すると、公開中のサイトがこの旧版（v1）で上書きされ、対戦やランキングが消えます。
+
 非公式のファンゲームです。
 
 ## 遊び方
@@ -29,5 +35,5 @@
 npm install
 npm run dev      # 開発サーバー
 npm test         # 色空間とゲームロジックのテスト
-npm run deploy   # build して Cloudflare Pages（hachiware-iroate）にデプロイ
+npm run deploy   # ⚠️ 実行しないこと。公開中の v2 が旧版で上書きされる（上の注意を参照）
 ```
